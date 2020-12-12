@@ -28,7 +28,7 @@ public class ProductController {
         System.out.println(id);
         System.out.println(title);
         System.out.println(coast);
-        if ((id == null) || (title == null) || (coast == null)) {
+        if ((id == null) || (title.equals("")) || (coast == null)) {
             return "redirect:/products/";
         }
         productService.addProduct(product);
