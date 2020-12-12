@@ -3,7 +3,7 @@ package ru.geekbrains.spring.mvc.model;
 public class Product {
     private Long id;
     private String title;
-    private int coast;
+    private Integer coast;
 
     public Long getId() {
         return id;
@@ -21,15 +21,15 @@ public class Product {
         this.title = title;
     }
 
-    public int getCoast() {
+    public Integer getCoast() {
         return coast;
     }
 
-    public void setCoast(int coast) {
+    public void setCoast(Integer coast) {
         this.coast = coast;
     }
 
-    public Product(Long id, String title, int coast) {
+    public Product(Long id, String title, Integer coast) {
         this.id = id;
         this.title = title;
         this.coast = coast;
